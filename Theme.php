@@ -21,11 +21,11 @@ class Theme extends BaseV1\Theme{
             'site: owner' => 'Secretaria',
             'site: by the site owner' => 'pela Secretaria',
 
-            'home: title' => " <br> Bem-vind@!",
+            'home: title' => "",
             'home: abbreviation' => "MT",
-            'home: colabore' => "Colabore com o Mapas MT",
-            'home: welcome' => "<div style='width:50%; float:left'>Mapas MT é um software livre para mapeamento colaborativo. O sistema é alimentado tanto pelas Secretarias de Estados e Municípios os quais inserem na plataforma informações sobre os equipamentos culturais, turísticos, programações oficiais, editais, e outros, como pela população em geral, que se cadastra como agente (individual ou coletivo) e pode divulgar suas próprias programações. Esta ferramenta incorpora nos processos públicos as lógicas do software livre, da colaboração, da descentralização, do uso de dados abertos e da transparência. Além disso, fortalece o Plano Nacional e Estadual de Cultura, contribuindo para o seu cumprimento e acompanhamento de algumas de suas metas. Participe!
-.</div><div style='width:50%; float:left; margin-bottom:25px;'><iframe width='100%' height='250' src='https://www.youtube.com/embed/videoseries?list=PLJxEUm52CjMSH_byKXd14nlTdR0ZB2KeF' frameborder='0' allowfullscreen></iframe></div>",
+            'home: colabore' => "Acesse o Mapas MT",
+            'home: welcome' => "",
+			//'home: welcome' => "<div style='width:100%; float:left; margin-bottom:25px;'><iframe width='100%' height='250' src='https://www.youtube.com/embed/videoseries?list=PLJxEUm52CjMSH_byKXd14nlTdR0ZB2KeF' frameborder='0' allowfullscreen></iframe></div>",
             'home: events' => "Veja a agenda de eventos da sua cidade. Como usuário cadastrado você pode incluir seus eventos no Mato Grosso Mapas MT e divulgá-los gratuitamente.",
             'home: agents' => "Você pode colaborar com a gestão do seu Estado e Municípios com suas próprias informações preenchendo seu perfil de agente. Neste espaço estão registrados artistas, gestores e produtores, uma rede de atores envolvidos na cena cultural mato-grossense. Você pode cadastrar um ou mais agentes (grupos, coletivos, bandas, empresas, instituições etc.), além de associar ao seu perfil eventos e espaços culturais com divulgação gratuita.",
             'home: spaces' => "Encontre aqui espaços e equipamentos culturais e turísticos de Mato Grosso incluídos na plataforma. Edificação, estrutura física ou área pública ou privada utilizada para o desenvolvimento de atividades. Também bens imóveis e moveis que contenham valor arquitetônico histórico.",
@@ -48,9 +48,24 @@ class Theme extends BaseV1\Theme{
             $this->_publishAssets();
         });
     }
-
-    protected function _publishAssets() {
+	
+	protected function _publishAssets() {
+      //  $this->jsObject['assets']['fundo-home1'] = $this->asset('img/home02.png', false);
+     //   $this->jsObject['assets']['fundo-home2'] = $this->asset('img/home02.jpg', false);
+	//	$this->jsObject['assets']['fundo-home2'] = $this->asset('img/home02.png', false);
+      //  $this->jsObject['assets']['fundo-home3'] = $this->asset('img/home03.jpg', false);
+     //   $this->jsObject['assets']['fundo-home4'] = $this->asset('img/home04.jpg', false);
+     //   $this->jsObject['assets']['fundo-home5'] = $this->asset('img/home05.jpg', false);
+    //    $this->jsObject['assets']['fundo-home6'] = $this->asset('img/home06.jpg', false);
         $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/mapasculturais_logo-instituicao.svg', false);
-    }
+	//	$this->jsObject['assets']['logo-estado'] = $this->asset('img/logoMT.png', false);
+	//	$this->jsObject['assets']['logo-estado2'] = $this->asset('img/logoMT2.png', false);
+
+     //   $this->jsObject['assets']['mapa-das-nuvens'] = $this->asset('img/mapasculturais_logo-site.png', false);
+      //  $this->jsObject['assets']['logo-gov'] = $this->asset('img/logo-gov.png', false);
+    //    $this->jsObject['assets']['OBEC-Logo'] = $this->asset('img/OBEC-Logo.png', false);
+    //    $this->jsObject['assets']['logo-unb'] = $this->asset('img/logo-unb.png', false);
+    //    $this->jsObject['assets']['logo-tim'] = $this->asset('img/logo-tim.png', false);
+    }  
 
 }
